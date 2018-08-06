@@ -1,8 +1,8 @@
 {% set name = "conllu" %}
-{% set version = "0.11" %}
+{% set version = "1.0" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "12218123570d10c5fc207773d15673440ec7c11c455f95b1d0c2bcbfec9b6c6a" %}
+{% set hash_value = "857d673d3dca6a570f3463ee160af388e66c9e7d2d5fb19ddf35f09a0f1679cc" %}
 
 package:
   name: '{{ name|lower }}'
