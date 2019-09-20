@@ -1,8 +1,8 @@
 {% set name = "conllu" %}
-{% set version = "1.4" %}
+{% set version = "1.5" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "7ae79a4f9cf383e7d0135e88ae40614332727fe17b57ac5ffff1ce72470a0e7b" %}
+{% set hash_value = "ba7667af20a68477deaa38eedba6c87f6f94f3f51d3549a419d40887da6a3ae7" %}
 
 package:
   name: '{{ name|lower }}'
@@ -20,10 +20,10 @@ build:
 
 requirements:
   build:
-    - python==2.7|>=3.4
+    - python ==2.7|>=3.4
     - pip
   run:
-    - python==2.7|>=3.4
+    - python ==2.7|>=3.4
 
 test:
   imports:
