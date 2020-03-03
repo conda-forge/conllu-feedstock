@@ -1,17 +1,14 @@
 {% set name = "conllu" %}
-{% set version = "2.2.2" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "46c7b05de6582476648f9939fc5215ed206917f43117f0f7b6bb756f9bc95899" %}
+{% set version = "2.3" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8ca853ee48c1a13c3c7f6ea0e24dbfeebae6ce72f6b2ecdf3995b866b406ffd4
 
 build:
   noarch: python
@@ -33,7 +30,7 @@ about:
   home: https://github.com/EmilStenstrom/conllu/
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: CoNLL-U Parser parses a CoNLL-U formatted string into a nested python dictionary
   description: CoNLL-U Parser parses a CoNLL-U formatted string into a nested python dictionary
   doc_url: https://github.com/EmilStenstrom/conllu/
