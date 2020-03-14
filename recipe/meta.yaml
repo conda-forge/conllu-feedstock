@@ -1,5 +1,5 @@
 {% set name = "conllu" %}
-{% set version = "2.3" %}
+{% set version = "2.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ca853ee48c1a13c3c7f6ea0e24dbfeebae6ce72f6b2ecdf3995b866b406ffd4
+  sha256: 73721d17e3346d8423704fe75bfe296f0c4a693489e0c650b71f504c2a300dda
 
 build:
   noarch: python
