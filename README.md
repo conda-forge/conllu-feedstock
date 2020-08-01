@@ -5,7 +5,7 @@ Home: https://github.com/EmilStenstrom/conllu/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: CoNLL-U Parser parses a CoNLL-U formatted string into a nested python dictionary
 
