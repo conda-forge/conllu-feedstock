@@ -1,5 +1,5 @@
 {% set name = "conllu" %}
-{% set version = "6.1.0" %}
+{% set version = "6.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 75b3c5c1216eb072b41bf4346c78fe26fb7b0175d24e0cee79af923d6d201777
+  sha256: 9e844493ddb0f2d821290045ec4a087d3e8ad97b93eb22f113e2e157d79e3335
 
 build:
   noarch: python
